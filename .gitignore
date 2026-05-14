@@ -22,6 +22,7 @@ wandb/
 
 # Outputs and checkpoints
 outputs/
+configs/
 checkpoints/
 *.safetensors
 *.bin

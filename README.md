@@ -433,6 +433,35 @@ python -m src.compare_eval_results \
   --output_markdown outputs/adamw_muon_hybrid_full_eval.md
 ```
 
+### 12.8 Проверка кода
+Для проверки качества кода добавлен скрипт:
+
+```bash
+bash scripts/run_lint.sh
+```
+
+Скрипт выполняет:
+```bash
+ruff check src scripts
+ruff format --check src scripts
+mypy src
+```
+
+Результат:
+```markdown
+=== Ruff: lint ===
+All checks passed!
+
+=== Ruff: format check ===
+11 files already formatted
+
+=== Mypy ===
+Success: no issues found in 11 source files
+
+All checks passed.
+```
+
+
 ---
 
 ## 13. Графики

@@ -1,4 +1,3 @@
-torch
 transformers>=4.43.0
 datasets>=2.20.0
 accelerate>=0.33.0
@@ -7,9 +6,8 @@ tqdm
 pyyaml
 numpy<2.1,>=1.26
 nvidia-ml-py
-pandas
-matplotlib
-tabulate
-lm-eval[hf]
 ruff
 mypy
+pandas
+matplotlib
+lm-eval
